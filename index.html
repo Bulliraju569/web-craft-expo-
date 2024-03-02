@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<h2>Create your account</h2>
+
+<p>Sign up now to preview your dashboard and start tracking your blood pressure and BMI. To run your first panel, visit a HealthTab location.</p>
+
+<p>Already have an account? <a href="#">Log in.</a></p>
+
+<form action="/submit_form" method="post"> 
+    <label for="email">Email address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Create password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm-password">Confirm password:</label><br>
+    <input type="password" id ="confirm-password"name ="confirm-password"required ><br><br>
+
+     <label for ="dob">Date of birth :</label><br>
+     <input type ="date"id ="dob "name ="dob "required ><br><br>
+
+     <label>Gender :</label><br>
+     <input type ="radio"id ="male"name ="gender" value ="male">
+     <label for ="male ">Male </label>
+     <input type ="radio" id ="female" name ="gender" value = "female">
+      <label for="female" > Female </label>
+      <br> 
+      <input type ="checkbox" id="terms-and-conditions" name ="terms-and-conditions" required > 
+      I have read and accept the
+       <a href="#">HealthTab terms & conditions</a>
+      .<br> 
+      
+       <button  type="submit">Sign up</button>
+</form>
+</body>
+</html>
